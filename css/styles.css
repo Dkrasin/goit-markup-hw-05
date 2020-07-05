@@ -138,6 +138,7 @@ ul {
   min-height: 50px;
   border: 1px transparent;
   border-radius: 4px;
+  transition: var(--hover-animation);
 }
 
 .button.primary {
@@ -572,7 +573,7 @@ display: flex;
   display: flex;
   justify-content: space-between;
 }
-.clients-item {
+/* .clients-item {
   display: block;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -585,7 +586,7 @@ display: flex;
   border-radius: 4px;
   height: 90px;
   width: 170px;
-}
+} */
 
 .clients-item a:hover,
 .clients-item a:focus {
@@ -1127,4 +1128,56 @@ font-size: 14px;
 .social-item-link:focus {
   background-color: var(--active-color);
   transform: scale(1.1);
+}
+/* Clients */
+
+
+.clients-item-link {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    height: 90px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--hover-animation);
+}
+
+.clients-icon {
+    fill: #afb1b8;
+    transition: var(--hover-animation);
+}
+
+.clients-item-link:hover, .clients-item-link:focus {
+    border-color: var(--active-color);
+    transform: scale(1.1);
+}
+
+.clients-item-link:hover .clients-icon, .clients-item-link:focus .clients-icon {
+    fill: var(--active-color);
+}
+/* Footer
+ */
+.address-item-link {
+  
+
+  transition: var(--hover-animation);
+}
+.address-item-link:hover,
+.address-item-link:focus {
+  color: var(--active-color);
+}
+.address .address-item:not(:last-child) {
+  margin-bottom: 9px;
+  
+}
+.contacts-item-link {
+ 
+
+  transition: var(--hover-animation);
+}
+.contacts-item-link:hover,
+.contacts-item-link:focus {
+  color: var(--active-color);
+  fill: var(--active-color);
 }
